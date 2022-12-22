@@ -1,5 +1,3 @@
-$red: pink;
 
-body{
-    background:$red;
-}
+@use './partials/setUp';
+@use './partials/headerStyles';
