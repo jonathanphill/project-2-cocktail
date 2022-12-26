@@ -1,0 +1,30 @@
+.icon-before::before {
+    // content: "\f007";
+    font: var(--fa-font-solid);
+    font-size: .65em;
+    text-rendering: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    -webkit-font-smoothing: antialiased;
+    background-color: #b9dde7;
+    position: absolute;
+    left: -50px;
+}
+
+.image-solid::before{
+    content: "\f03e";
+}
+.user::before{
+    content: "\f007";
+}
+.display::before{
+    content: "\e163";
+}
+.phone-flip::before{
+    content: "\f879";
+}
