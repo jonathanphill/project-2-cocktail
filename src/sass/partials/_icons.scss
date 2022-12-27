@@ -1,19 +1,19 @@
 .icon-before::before {
     // content: "\f007";
     font: var(--fa-font-solid);
-    font-size: .65em;
+    font-size: .85em;
     text-rendering: auto;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    width: 30px;
-    height: 30px;
+    width: 45px;
+    height: 45px;
     -webkit-font-smoothing: antialiased;
     background-color: #b9dde7;
     position: absolute;
-    left: -50px;
+    left: -70px;
 }
 
 .image-solid::before{
