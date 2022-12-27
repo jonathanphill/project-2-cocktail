@@ -1,3 +1,5 @@
+//Section with bottom row image with light-blue background and favourite things text
+
 .sectionFlex {
     display: flex;
     position: relative;
@@ -13,6 +15,7 @@
     position: relative;
 }
 .sectionFlexImg{
+    // border: 2px solid black;
     display: flex;
         justify-content:flex-start;
         background-color: #b9dde7;
@@ -20,7 +23,7 @@
         bottom:-2em;
     
         img {
-            // border: 2px solid black;
+            
             max-width: calc(576px - 1em);
             position: relative;
             left: -1em; 
@@ -32,18 +35,23 @@
     display: flex;
     justify-content: end;
     background-color: white;
-    padding-bottom: 1em;
+    padding-top: 1em;
 }
 .sectionFlex_text{
     // border: 2px solid tomato;
     display: flex;
     flex-direction: column;
-    justify-content: center;
+    justify-content:flex-start;
     align-items:flex-start;
     max-width: 576px;
     padding-right: 4em;
     h2 {
             text-transform: uppercase;
             margin-bottom: 0;
+            margin-top: 0;
         }
+    button{
+        margin-top: 1em;
+        align-self: flex-end;
+    }
 }

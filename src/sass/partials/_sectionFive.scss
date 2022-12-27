@@ -1,0 +1,41 @@
+.sectionFive{
+    margin-top:9em;
+    margin-bottom: 6em;
+    // border: 2px solid tomato;
+    display: flex;
+}
+.oneImgContainer{
+    width: 30%;
+}
+.journeyTxtContainer {
+    // border: 2px solid black;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+.journeyTxtContainer{
+    position: relative;
+    padding-left: 4em;
+    padding-right: 5em;
+    width: 100%;
+    h2{
+        position: relative;
+        top: -.7em;
+        text-transform: uppercase;
+        margin-bottom: 0;
+        margin-top: 0;
+    }
+    
+}
+.oneImgContainer {
+    background-color: #227284;
+    position: relative;
+    display: flex;
+
+    img {
+        position: relative;
+        top: -.7em;
+        right: .7em;
+    }
+}
