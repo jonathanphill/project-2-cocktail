@@ -48,6 +48,7 @@ header{
     display: flex;
     position: relative;
     top: 4em;
+    z-index: 9;
     img{
         position: relative;
         top: -1em;
@@ -81,6 +82,16 @@ header{
     }
 }
 
+// Blog Header Styles STARTS
+.blog__header{
+    background-image: url(../../assets/blog-image-1.jpg);
+    background-repeat: no-repeat;
+    background-size:cover;
+    min-height: 16rem;
+}
+.blogNac{
+    background-color: #b9dde7;
+}
 
 
 
@@ -96,60 +107,3 @@ header{
 
 
 
-// .nav__content{
-//     margin-top: 80px;
-//     display: flex;
-//     justify-content: space-between;
-// }
-// .nav__content__img{
-//     width: 40%;
-//     display: flex;
-//     position: relative;    
-//     // border: 2px solid green;
-//     img{
-//         width: 20em;
-//         position: absolute;
-//         left: 0em;
-//         top: -5em;
-//         display: block;
-//         z-index: 10;
-//     }
-//     &::after{
-//         content: "";
-//         display: block;
-//         position: absolute;
-//         top: -4em;
-//         right:2.25em;
-//         width: 29px;
-//         height: 198%;
-//         background-color: white;
-//     }
-    
-
-// }
-// .nav__content__text{
-//     // border: 1px solid tomato;
-//     width: 60%;
-//     display: flex;
-//     flex-direction: row-reverse;
-//     align-items: center;
-//     justify-content:flex-end;
-//     position: relative;
-//     padding-left: 3em;
-//     h1 {
-//             font-size: 100px;
-//             // border: 1px solid black;
-          
-//         }
-
-//     img{
-//         // border: 1px solid black;
-//         width: 117px;
-//         height: 121px;
-//         position: absolute;
-//         left: 46%;
-//         top: 13%;
-        
-//     }
-    
-// }

@@ -1,9 +1,12 @@
 //Styling for the Who's Harper ? Text
-
-.sectionFlex{
+.section__one{
+    background-color: #f6f6f6;
     display: flex;
+    position: relative;
+    padding-top: 1.5em;
     justify-content: flex-end;
 }
+
 .section__text{
     // border: 1px solid tomato;
     display: flex;
