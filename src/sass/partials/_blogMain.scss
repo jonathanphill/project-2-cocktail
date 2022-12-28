@@ -1,0 +1,23 @@
+.blog__main{
+    padding-top: 4em;
+    // border: 2px solid red;
+    display: flex;
+    gap: 1rem;
+}
+
+.blog__aside{
+    width: 40%;
+    background-color: white;
+}
+.blog__section{
+    width: 60%;
+    background-color: white;
+}
+.blog__aside{
+    border: 2px solid red; 
+    height: 100%;
+}
+.aside__content{
+    border: 2px solid black;
+}
+
