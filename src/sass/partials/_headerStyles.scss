@@ -94,8 +94,13 @@ header{
 }
 
 
-
-
+//Contact Header Styles STARTS
+.contact__header {
+    background-image: url(../../assets/contact-image-1.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    min-height: 16rem;
+}
 
 
 
