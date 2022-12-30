@@ -1,17 +1,5 @@
-@use './partials/setUp';
-@use './partials/headerStyles';
-@use './partials/buttons';
-@use './partials/icons';
-@use './partials/sectionOne';
-@use './partials/boxStyles';// section with four images wiht background colors behind the images
-@use './partials/boxStylesFlex';// section with four images wiht background colors behind the images
-@use './partials/sectionThree';
-@use './partials/sectionFive';// section with one image and harper's journey text
-@use './partials/imageGallery';
-@use './partials/footerStyles';
-@use './partials/blogMain';
-@use './partials/contactMain';
-
-
+@forward './partials/setUp';
+@forward './partials/customProperties';
+@forward './partials/headerStyles';
 
 
