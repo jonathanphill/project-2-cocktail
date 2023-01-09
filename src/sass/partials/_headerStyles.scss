@@ -26,6 +26,7 @@ header{
         transition: opacity 150ms ease-in-out;
         &:hover, &:focus{
             color: white;
+            // transition: 2.5ms ease-in-out;
         }
     }
 }
@@ -77,6 +78,10 @@ header{
     // transition: opacity 250ms ease-in-out 250ms;
 }
 
+.nav__hero__img{
+    background-color:white;
+}
+
 
 
 
@@ -97,7 +102,7 @@ h1{
     padding: 3em 0;
     margin: 0 auto;
     
-    .nav__content__textImage img{
+    .nav__content__textImage{
         // border: 1px solid tomato;
         position: relative;
         top: -32px;

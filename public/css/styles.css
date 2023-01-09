@@ -236,6 +236,7 @@ html {
 
 img {
   max-width: 100%;
+  display: block;
 }
 
 ul {
@@ -364,6 +365,10 @@ header {
   opacity: 1;
 }
 
+.nav__hero__img {
+  background-color: white;
+}
+
 h1 {
   font-size: 4rem;
   margin: 0;
@@ -379,7 +384,7 @@ h1 {
   padding: 3em 0;
   margin: 0 auto;
 }
-.nav__content__text .nav__content__textImage img {
+.nav__content__text .nav__content__textImage {
   position: relative;
   top: -32px;
   left: -25px;
@@ -439,6 +444,10 @@ h1 {
   padding-top: 2em;
 }
 
+.box1__img {
+  background-color: var(--clr-dusk-blue);
+}
+
 .box2 {
   padding: 1em 0;
 }
@@ -455,4 +464,43 @@ h1 {
 .sectionFlex_text h2 {
   font-size: 32px;
   text-transform: uppercase;
+}
+
+.sectionFlexImg {
+  background-color: var(--clr-light-blue);
+}
+
+.sectionFive {
+  background-color: var(--clr--white-shade);
+  padding: 3em 0;
+}
+
+.oneImgContainer img {
+  margin: 0 auto;
+}
+
+.journeyTxtContainer {
+  padding-top: 1em;
+}
+.journeyTxtContainer h2 {
+  text-transform: uppercase;
+}
+
+.galleryContainer {
+  padding: 2em 1em;
+}
+
+.gallery__item {
+  margin-bottom: 1em;
+}
+
+footer {
+  background-color: var(--clr-black);
+}
+
+footer p {
+  margin: 0;
+  padding: 1em 0;
+  text-align: center;
+  color: white;
 }

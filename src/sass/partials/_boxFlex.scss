@@ -1,7 +1,10 @@
 .boxFlex{
     padding-top: 2em;
+    // border: 1px solid tomato;
 }
-
+.box1__img{
+    background-color: var(--clr-dusk-blue);
+}
 .box2{
     padding: 1em 0;
 }
@@ -21,4 +24,8 @@
             text-transform: uppercase;
     
         }
+}
+
+.sectionFlexImg{
+    background-color:var(--clr-light-blue);
 }
