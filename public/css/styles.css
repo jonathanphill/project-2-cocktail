@@ -315,6 +315,7 @@ header {
 }
 .mainNav a:hover, .mainNav a:focus {
   color: white;
+  transition: 15ms ease-in-out;
 }
 
 .navToggle:checked ~ nav > .mainNav {
