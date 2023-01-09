@@ -1,3 +1,4 @@
+@import url("https://fonts.googleapis.com/css2?family=Cabin&family=Oswald:wght@700&display=swap");
 html {
   line-height: 1.15;
   -ms-text-size-adjust: 100%;
@@ -248,6 +249,7 @@ a,
 a:visited,
 a:active {
   text-decoration: none;
+  color: var(--clr-black);
 }
 
 :root {
@@ -257,6 +259,33 @@ a:active {
   --clr-dusk-blue:hsl(191, 59%, 33%);
   --clr-light-blue:hsl(193, 49%, 82%);
   --clr--white-shade:hsl(0, 0%, 96%);
+  --ff-700:"Oswald", sans-serif;
+  --ff-400:"Cabin", sans-serif;
+}
+
+body {
+  font-family: var(--ff-700);
+}
+
+p {
+  font-family: var(--ff-400);
+  font-size: 20px;
+  line-height: 32px;
+}
+
+h1, h2, h3 {
+  margin: 0;
+  padding: 0;
+}
+
+.btn {
+  display: inline-block;
+  border: none;
+  font-family: var(--ff-700);
+  background-color: var(--clr-accent);
+  text-transform: uppercase;
+  font-size: 20px;
+  padding: 0.5em 1.5em;
 }
 
 header {
@@ -270,18 +299,20 @@ header {
   transform: scale(1, 0);
   transform-origin: top;
   transition: transform 400ms ease-in-out;
+  display: none;
 }
 .mainNav li {
   margin-bottom: 1em;
-  margin-left: 1em;
 }
 .mainNav a {
-  font-size: 1.2rem;
+  font-family: var(--ff-700);
+  font-size: 1.25rem;
   text-transform: uppercase;
+  color: var(--clr-black);
   opacity: 0;
   transition: opacity 150ms ease-in-out;
 }
-.mainNav a:hover {
+.mainNav a:hover, .mainNav a:focus {
   color: white;
 }
 
@@ -297,7 +328,7 @@ header {
 }
 
 .navToggle-label {
-  height: 100%;
+  height: auto;
   display: flex;
   align-items: center;
 }
@@ -331,4 +362,97 @@ header {
 
 .navToggle:checked ~ nav > .mainNav a {
   opacity: 1;
+}
+
+h1 {
+  font-size: 4rem;
+  margin: 0;
+  padding: 0;
+}
+
+.nav__content__text {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  padding: 3em 0;
+  margin: 0 auto;
+}
+.nav__content__text .nav__content__textImage img {
+  position: relative;
+  top: -32px;
+  left: -25px;
+}
+
+.section__one {
+  background-color: var(--clr--white-shade);
+  padding: 2em 0;
+}
+.section__one h2 {
+  text-transform: uppercase;
+  font-size: 42px;
+}
+
+.iconSection {
+  background-color: var(--clr--white-shade);
+  padding: 2em 0;
+}
+.iconSection h3 {
+  font-size: 32px;
+  text-transform: uppercase;
+}
+
+.icon-before::before {
+  font: var(--fa-font-solid);
+  font-size: 0.75em;
+  text-rendering: auto;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  width: 45px;
+  height: 45px;
+  -webkit-font-smoothing: antialiased;
+  background-color: #b9dde7;
+  position: relative;
+  margin-right: 0.5em;
+}
+
+.image-solid::before {
+  content: "\f03e";
+}
+
+.user::before {
+  content: "\f007";
+}
+
+.display::before {
+  content: "\e163";
+}
+
+.phone-flip::before {
+  content: "\f879";
+}
+
+.boxFlex {
+  padding-top: 2em;
+}
+
+.box2 {
+  padding: 1em 0;
+}
+
+.sectionFlex {
+  padding-bottom: 2em;
+}
+
+.sectionFlex_text {
+  padding-bottom: 1em;
+}
+
+.box2Flex h2,
+.sectionFlex_text h2 {
+  font-size: 32px;
+  text-transform: uppercase;
 }

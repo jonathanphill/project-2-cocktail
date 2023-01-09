@@ -1,0 +1,24 @@
+.boxFlex{
+    padding-top: 2em;
+}
+
+.box2{
+    padding: 1em 0;
+}
+
+.sectionFlex{
+    // border: 1px solid tomato;
+    padding-bottom: 2em;
+}
+.sectionFlex_text{
+    padding-bottom: 1em;
+}
+
+.box2Flex,
+.sectionFlex_text{
+    h2 {
+            font-size: 32px;
+            text-transform: uppercase;
+    
+        }
+}

@@ -1,19 +1,32 @@
+.iconSection {
+    background-color: var(--clr--white-shade);
+    padding: 2em 0;
+
+    h3 {
+        font-size: 32px;
+        text-transform: uppercase;
+    }
+}
+
+
 .icon-before::before {
-    // content: "\f007";
     font: var(--fa-font-solid);
-    font-size: .85em;
+    font-size: .75em; //.85em
     text-rendering: auto;
-    display: flex;
-    flex-direction: column;
+    display:inline-flex;
+    // flex-direction: row;
     justify-content: center;
     align-items: center;
+    // border-radius: 50%;
+    // width: 45px;
+    // height: 45px;
     border-radius: 50%;
     width: 45px;
     height: 45px;
     -webkit-font-smoothing: antialiased;
     background-color: #b9dde7;
-    position: absolute;
-    left: -70px;
+    position:relative;
+    margin-right:.5em;
 }
 
 .image-solid::before{
@@ -28,3 +41,4 @@
 .phone-flip::before{
     content: "\f879";
 }
+

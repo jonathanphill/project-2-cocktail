@@ -6,5 +6,33 @@
     --clr-dusk-blue:hsl(191, 59%, 33%);
     --clr-light-blue:hsl(193, 49%, 82%);
     --clr--white-shade:hsl(0, 0%, 96%);
+    --ff-700:'Oswald', sans-serif;
+    --ff-400:'Cabin', sans-serif;
+
+}
+
+body{
+    font-family: var(--ff-700);
+}
+p{
+    font-family: var(--ff-400);
+    font-size: 20px;
+    line-height: 32px;
+}
+
+h1,h2,h3{
+    margin: 0;
+    padding: 0;
+}
+
+.btn{
+    display: inline-block;
+    border: none;
+    font-family:var(--ff-700);
+    background-color: var(--clr-accent);
+    text-transform: uppercase;
+    font-size: 20px;
+    padding: .5em 1.5em;
+    // border-radius: 100px;
 
 }
