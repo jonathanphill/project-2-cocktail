@@ -88,7 +88,7 @@ header{
 
 // text with circular image
 h1{
-    font-size:4rem;
+    font-size:clamp(4rem, 1vw + 1rem, 8rem);
     margin: 0;
     padding: 0;
 }

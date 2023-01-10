@@ -1,12 +1,13 @@
 @forward './partials/setUp';
-@forward './partials/customProperties';
-@forward './partials/headerStyles';
-@forward './partials/sectionOne';
-@forward './partials/oneImgSection';
-@forward './partials/icons';
-@forward './partials/boxFlex';
-@forward './partials/sectionFive';
-@forward './partials/imgGallery';
-@forward './partials/footer';
+@forward './partials/homePartials/customProperties';
+@forward './partials/homePartials/headerStyles';
+@forward './partials/homePartials/sectionOne';
+@forward './partials/homePartials/oneImgSection';
+@forward './partials/homePartials/icons';
+@forward './partials/homePartials/boxFlex';
+@forward './partials/homePartials/sectionFive';
+@forward './partials/homePartials/imgGallery';
+@forward './partials/homePartials/footer';
+@forward './partials/blogPartials/blogHeader';
 
 
