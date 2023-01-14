@@ -1,5 +1,5 @@
 .blog__header{
-    min-height: 400px;
+    // min-height: 400px;
     background-image: url(../assets/blog-image-1.jpg);
     border: 1px solid black;
     background-repeat: no-repeat;
@@ -10,7 +10,6 @@
 
 .blog__nav{
     background-color: transparent;
-    padding-left: 1em;
 }
 
 .blog__heading--main{
@@ -24,44 +23,3 @@
 }
 
 
-.aside__top__content,
-.aside__content__primaryText{
-    display: flex;
-    flex-direction: column;
-    justify-content:center;
-    align-items: center;
-    text-align: center;
-    
-}
-.aside__top__content{ 
-    padding: 1em 1em;
-    background-color: white;
-    p{
-        margin-bottom: 0;
-    }
-    margin-bottom: 1em; 
-}
-
-.aside__heading{
-    text-transform: uppercase;
-    margin-top: 1em;
-}
-
-.aside__bottom__content{
-    padding: 1em 1em;
-    background-color: white;
-    // text-align: center;
-}
-
-.aside__list__item{
-    // list-style: disc;
-    // list-style-position: inside;
-}
-
-.aside__bottom__para{
-    margin-top: 2px;
-    margin-bottom: 0;
-    display: list-item;
-    list-style: disc;
-    list-style-position:inside;
-}

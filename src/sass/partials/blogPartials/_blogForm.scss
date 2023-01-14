@@ -1,0 +1,36 @@
+.section__form{
+    // border: 2px solid tomato;
+    margin-top: 1em;
+    margin-bottom: 2em;
+}
+
+.form__user__info input{
+    text-align:center;
+    width: 100%;
+    margin-bottom:1em;    
+    border: none;
+    padding: .65em 0;
+
+    &::placeholder{
+        color:black;
+        opacity: 1;
+    }
+}
+
+.form__comment textarea{ 
+    text-align: center;
+    width: 100%;
+    border: none;
+    padding: .65em 0 0 0;
+    resize: none;
+    margin-bottom: 1em;
+    &::placeholder {
+            color: black;
+            opacity: 1;
+        }
+}
+.form__button{
+    .btn{
+        width: 100%;
+    }
+}

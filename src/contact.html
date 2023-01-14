@@ -15,8 +15,12 @@
 </head>
 <body>
     <header class="contact__header">
+        <input type="checkbox" id="navToggle" class="navToggle">
+        <label for="navToggle" class="navToggle-label  wrapper">
+            <span></span>
+        </label>
         <nav>
-            <ul class="mainNav blogNav">
+            <ul class="mainNav blog__nav wrapper">
                 <li><a href="./index.html">Home</a></li>
                 <li><a href="#">About</a></li>
                 <li><a href="./index.html" class="mainText">Harper</a></li>
@@ -51,29 +55,29 @@
 
             </div>
 
-            <div class="contact__form">
-                <form action="#" class="blog__form">
-                    <div class="form__top">
-                        <div class="form__name">
-                            <label for="name" class="sr-only">Name</label>
-                            <input type="text" name="name" id="name" placeholder="Name">
-                        </div>
-                        <div class="form__name">
-                            <label for="email" class="sr-only">Email</label>
-                            <input type="email" name="email" id="email" placeholder="Email Address">
-                        </div>
-                    </div>
-    
-                    <div class="form__comment">
-                        <label for="comment" class="sr-only">Message</label>
-                        <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Comment"></textarea>
-                    </div>
-                    
-                    <div class="form__button">
-                        
-                        <button>Submit</button>
-                    </div>
-                </form>
+            <div class="section__form">
+                <form action="#" class="form">
+                                <div class="form__top">
+                                    <div class="form__user__info">
+                                        <label for="name" class="sr-only">Name</label>
+                                        <input type="text" name="name" id="name" placeholder="Name">
+                                    </div>
+                                    <div class="form__user__info">
+                                        <label for="email" class="sr-only">Email</label>
+                                        <input type="email" name="email" id="email" placeholder="Email Address">
+                                    </div>
+                                </div>
+
+                                <div class="form__comment">
+                                    <label for="message" class="sr-only">Message</label>
+                                    <textarea name="message" id="message" cols="30" rows="10" placeholder="Message"></textarea>
+                                </div>
+                                
+                                <div class="form__button">
+                                    
+                                    <button class="btn">Submit</button>
+                                </div>
+                        </form>
     
             </div>
         </div>

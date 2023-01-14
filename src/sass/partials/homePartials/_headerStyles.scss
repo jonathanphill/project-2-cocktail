@@ -3,6 +3,7 @@
 header{
     position: relative;
     background-color: var(--clr-light-blue);
+    padding: 2em 0;
 }
 
 .mainNav{
@@ -79,7 +80,9 @@ header{
 }
 
 .nav__hero__img{
-    background-color:white;
+    display: flex;
+    justify-content: center;
+    // background-color:white;
 }
 
 
@@ -93,7 +96,6 @@ h1{
     padding: 0;
 }
 .nav__content__text{
-    // border: 1px solid black;
     display: flex;
     flex-direction: row-reverse;
     justify-content: center;
@@ -110,4 +112,5 @@ h1{
     }
     
 }
+
 

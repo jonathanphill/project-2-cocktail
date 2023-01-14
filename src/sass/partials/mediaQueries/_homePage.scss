@@ -1,0 +1,18 @@
+@media(min-width:600px) {
+
+    h1 {
+            font-size:6em;
+        }
+    .nav__content__text {
+        // border: 2px solid tomato;
+        padding-top:5em;
+            .nav__content__textImage {
+                // border: 1px solid tomato;
+                position: absolute;
+                top: 3em;
+                left:20em;
+                transform: rotate(10deg);
+            }
+    
+        }
+}

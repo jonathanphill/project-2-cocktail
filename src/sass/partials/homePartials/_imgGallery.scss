@@ -1,7 +1,14 @@
-
-
+// section with three images at the bottom of the main home page
+.galleryContainer__section{
+    background-color: white;
+}
 .galleryContainer{
     padding: 2em 1em;
+    // border: 2px solid tomato;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
 
 .gallery__item{
