@@ -1,0 +1,33 @@
+// blog header styles @1200px
+@media (min-width:1200px) {
+
+    .blog__header {
+        background-size: cover;
+        background-position-y: 1em;
+        position: relative;
+        padding:0;
+        max-width: 1280px;
+        margin: 0 auto;
+    }
+    .blog__nav{
+        // border:2px solid tomato;
+        width: 100%;
+        position:sticky;
+        top: 0;
+        padding:.3em 0;
+        
+        background-color: var(--clr-light-blue);
+    }
+    .blog__heading {
+        position: absolute;
+        top: 87%;
+        left: 5%;
+    }
+    .blog__heading--main{
+        font-size: 3em;
+        display: inline-block;
+    }
+    
+    
+}
+

@@ -10,8 +10,13 @@
     justify-content: center;
     align-items: center;
 }
-
-.gallery__item{
-    // border: 2px solid tomato;
-    margin-bottom: 1em;
+.imageGallery {
+    display: flex;
+    flex-direction:column;
+    flex-wrap: no-wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1em;
 }
+
+

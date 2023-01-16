@@ -1,9 +1,22 @@
 .boxFlex{
     padding-top: 2em;
-    // border: 1px solid tomato;
+    // margin: 5em 0 0 0;
+    background-color: white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+}
+// box1 contains the image with waves and setting sun
+.box1 {
+    // display: flex;
+    // position: relative;
+    background-color: var(--clr-dusk-blue);
+    // bottom: 1em;
 }
 .box1__img{
-    background-color: var(--clr-dusk-blue);
+    img{
+        margin: 0 auto;
+    }
 }
 .box2{
     padding: 1em 0;
@@ -11,7 +24,10 @@
 
 .sectionFlex{
     // border: 1px solid tomato;
+    background-color: white;
     padding-bottom: 2em;
+    display: flex;
+    flex-direction: column;
 }
 .sectionFlex_text{
     padding-bottom: 1em;
@@ -28,4 +44,7 @@
 
 .sectionFlexImg{
     background-color:var(--clr-light-blue);
+    img {
+            margin: 0 auto;
+        }
 }

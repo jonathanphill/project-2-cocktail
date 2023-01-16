@@ -38,13 +38,17 @@ header{
     display: block;
     // transform: scale(1,1);
 }
+
+.navToggle:checked~nav>.mainNav a {
+    opacity: 1;
+    // transition: opacity 250ms ease-in-out 250ms;
+}
 .navToggle{
     display:none;
 }
 
 .navToggle-label{
     // margin-left: 1em;
-    // border: 1px solid red;
     height:auto;
     display: flex;
     align-items: center;
@@ -74,10 +78,7 @@ header{
     top: 20px;
 }
 
-.navToggle:checked ~ nav>.mainNav a{
-    opacity: 1;
-    // transition: opacity 250ms ease-in-out 250ms;
-}
+
 
 .nav__hero__img{
     display: flex;
@@ -96,8 +97,8 @@ h1{
     padding: 0;
 }
 .nav__content__text{
+    
     display: flex;
-    flex-direction: row-reverse;
     justify-content: center;
     align-items: center;
     position: relative;
