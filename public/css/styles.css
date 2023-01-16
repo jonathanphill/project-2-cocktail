@@ -908,7 +908,7 @@ address .email__address {
   }
 }
 @media (min-width: 1200px) {
-  .blog__header {
+  .blog__header, .contact__header {
     background-size: cover;
     background-position-y: 1em;
     position: relative;
@@ -931,5 +931,38 @@ address .email__address {
   .blog__heading--main {
     font-size: 3em;
     display: inline-block;
+  }
+  .blog__main > .wrapper {
+    display: flex;
+  }
+  .aside {
+    width: 30%;
+    height: 100%;
+  }
+  .blog__section {
+    width: 70%;
+    padding: 0 1em;
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    margin-bottom: 3em;
+  }
+  .form__top {
+    display: flex;
+    gap: 15px;
+    margin-top: 0.5em;
+    margin-bottom: 1em;
+  }
+  .form__user__info {
+    flex: 1;
+  }
+  .form__user__info input {
+    text-align: left;
+    margin: 0;
+    padding: 1em 0 1em 2em;
+  }
+  .form__comment textarea {
+    text-align: left;
+    padding: 2em 0 1em 2em;
   }
 }
