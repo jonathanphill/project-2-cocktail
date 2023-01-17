@@ -947,6 +947,20 @@ address .email__address {
     gap: 1em;
     margin-bottom: 3em;
   }
+  .blog__secondary__content {
+    flex-direction: row;
+    padding: 1.5em 1.5em;
+  }
+  .blog__secondary__image {
+    width: 50%;
+  }
+  .blog__secondary__text p {
+    margin: 0;
+    margin-left: 0.5em;
+  }
+  .blog__secondary--noBorder {
+    border: none;
+  }
   .form__top {
     display: flex;
     gap: 15px;
@@ -964,5 +978,25 @@ address .email__address {
   .form__comment textarea {
     text-align: left;
     padding: 2em 0 1em 2em;
+  }
+  .contact__main {
+    padding: 4em 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    gap: 1.3em;
+  }
+  .contact__info {
+    height: 100%;
+  }
+  .contact__section__form {
+    width: 60%;
+    margin-top: 0;
+  }
+  .form__top {
+    margin-top: 0;
+  }
+  .contact__header {
+    min-height: 19rem;
   }
 }
