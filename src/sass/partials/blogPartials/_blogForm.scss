@@ -10,6 +10,7 @@
     margin-bottom:1em;    
     border: none;
     padding: .65em 0;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, .1);
 
     &::placeholder{
         color:black;
@@ -23,6 +24,7 @@
     border: none;
     padding: .65em 0 0 0;
     resize: none;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, .1);
     margin-bottom: 1em;
     &::placeholder {
             color: black;

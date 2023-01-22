@@ -5,6 +5,7 @@
     position: relative;
     display: flex;
     flex-direction: column;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, .1);
 }
 // box1 contains the image with waves and setting sun
 .box1 {
@@ -24,6 +25,7 @@
 
 .sectionFlex{
     // border: 1px solid tomato;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, .1);
     background-color: white;
     padding-bottom: 2em;
     display: flex;

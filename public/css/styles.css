@@ -464,6 +464,7 @@ header {
   position: relative;
   display: flex;
   flex-direction: column;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
 }
 
 .box1 {
@@ -479,6 +480,7 @@ header {
 }
 
 .sectionFlex {
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
   background-color: white;
   padding-bottom: 2em;
   display: flex;
@@ -576,14 +578,16 @@ footer p {
 
 .blog__primary,
 .blog__secondary,
-.blog__teritiary {
+.blog__teritiary,
+.aside__top__content,
+.aside__bottom__content {
   box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
 }
 
 .read-more-btn {
   color: rgb(53, 49, 49);
   padding: 15px 40px;
-  background-color: rgb(149, 170, 197);
+  background-color: var(--clr-greyblue);
   border: none;
   outline: none;
   font-size: 20px;
@@ -599,6 +603,10 @@ footer p {
 }
 
 .text.show-more .dots {
+  display: none;
+}
+
+.hide {
   display: none;
 }
 
@@ -671,6 +679,7 @@ footer p {
   margin-bottom: 1em;
   border: none;
   padding: 0.65em 0;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
 }
 .form__user__info input::placeholder {
   color: black;
@@ -683,6 +692,7 @@ footer p {
   border: none;
   padding: 0.65em 0 0 0;
   resize: none;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
   margin-bottom: 1em;
 }
 .form__comment textarea::placeholder {
@@ -710,6 +720,7 @@ main {
 .contact__info {
   padding: 2em 1em;
   background-color: white;
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
 }
 
 .fa-brands {
