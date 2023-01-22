@@ -267,6 +267,7 @@ a:active {
   --clr--white-shade:hsl(0, 0%, 96%);
   --ff-700:"Oswald", sans-serif;
   --ff-400:"Cabin", sans-serif;
+  --fs-xl: clamp(2rem, 15vw + 1rem, 6.25rem);
 }
 
 body {
@@ -377,10 +378,11 @@ header {
   justify-content: center;
 }
 
-h1 {
-  font-size: clamp(4rem, 1vw + 1rem, 8rem);
-  margin: 0;
-  padding: 0;
+.main__heading--title {
+  font-family: var(--ff-700);
+  font-size: var(--fs-xl);
+  margin: 0 auto;
+  text-align: center;
 }
 
 .nav__content__text {
@@ -388,13 +390,23 @@ h1 {
   justify-content: center;
   align-items: center;
   position: relative;
-  padding: 3em 0;
+  padding: 2.5em 0;
   margin: 0 auto;
 }
-.nav__content__text .nav__content__textImage {
+
+.main__heading {
   position: relative;
-  top: -32px;
-  left: -25px;
+}
+
+.nav__content__textImage {
+  width: 26vw;
+  position: absolute;
+  top: -1em;
+  right: -1em;
+}
+.nav__content__textImage img {
+  max-width: 100%;
+  display: block;
 }
 
 .section__one {
@@ -402,7 +414,7 @@ h1 {
 }
 .section__one h2 {
   text-transform: uppercase;
-  font-size: 42px;
+  font-size: 41px;
 }
 
 .iconSection {
@@ -692,29 +704,54 @@ address .email__address {
   line-height: 3;
 }
 
-@media (min-width: 600px) {
-  h1 {
-    font-size: 6em;
+@media (min-width: 321px) {
+  .section__one h2 {
+    font-size: 42px;
   }
+}
+@media (min-width: 600px) {
   .nav__content__text {
     padding-top: 5em;
   }
-  .nav__content__text .nav__content__textImage {
+}
+@media (min-width: 400px) {
+  .nav__hero__img {
+    margin-bottom: 3em;
+  }
+  .main__heading {
+    position: relative;
     position: absolute;
-    top: 3em;
-    left: 20em;
-    transform: rotate(10deg);
+  }
+  .nav__content__textImage {
+    width: clamp(94.8px, 21vw, 143px);
+    position: absolute;
+    top: -1.8em;
+    right: -2em;
+  }
+  .nav__content__textImage img {
+    max-width: 100%;
+    display: block;
+  }
+}
+@media (min-width: 700px) {
+  .main__heading {
+    position: relative;
+    position: absolute;
+  }
+  .nav__content__textImage {
+    width: clamp(94.8px, 21vw, 143px);
+    position: absolute;
+    top: -1.8em;
+    right: -2em;
+  }
+  .nav__content__textImage img {
+    max-width: 100%;
+    display: block;
   }
 }
 @media (min-width: 900px) {
   .nav__content__text {
     padding-top: 5em;
-  }
-  .nav__content__text .nav__content__textImage {
-    position: absolute;
-    top: 3em;
-    left: 25em;
-    transform: rotate(15deg);
   }
   .section__one {
     padding: 4em 0;
@@ -749,9 +786,6 @@ address .email__address {
   .navToggle:not(:checked) ~ nav > .mainNav li {
     margin-bottom: 0;
   }
-  h1 {
-    font-size: 6em;
-  }
   .nav__content {
     display: flex;
   }
@@ -759,12 +793,8 @@ address .email__address {
     width: 75%;
     margin: 0;
   }
-  .nav__content__text .nav__content__textImage {
-    position: absolute;
-    width: 135px;
-    top: 36%;
-    left: 66%;
-    transform: rotate(1deg);
+  .nav__hero__img {
+    margin-bottom: 0;
   }
   .nav__hero__img {
     background-color: white;
@@ -907,6 +937,11 @@ address .email__address {
     padding: 4em 0;
   }
 }
+@media (min-width: 1280px) {
+  .section_img {
+    margin: 0 auto;
+  }
+}
 @media (min-width: 1200px) {
   .blog__header, .contact__header {
     background-size: cover;
@@ -998,5 +1033,12 @@ address .email__address {
   }
   .contact__header {
     min-height: 19rem;
+  }
+}
+@media (min-width: 1344px) {
+  .blog__heading {
+    position: absolute;
+    top: 87%;
+    left: 0;
   }
 }

@@ -91,27 +91,42 @@ header{
 
 
 // text with circular image
-h1{
-    font-size:clamp(4rem, 1vw + 1rem, 8rem);
-    margin: 0;
-    padding: 0;
+.main__heading--title {
+    font-family: var(--ff-700);
+    // border: 2px solid green;
+    // font-size:calc(2 * var(--fs-400));
+    font-size: var(--fs-xl);
+    margin: 0 auto;
+    text-align: center;
+
 }
 .nav__content__text{
-    
     display: flex;
     justify-content: center;
     align-items: center;
     position: relative;
-    padding: 3em 0;
+    padding: 2.5em 0;
     margin: 0 auto;
-    
-    .nav__content__textImage{
-        // border: 1px solid tomato;
-        position: relative;
-        top: -32px;
-        left: -25px;
+}
+.main__heading {
+    // border:2px solid tomato;
+    position: relative;
+
+}
+.nav__content__textImage {
+    // border: 2px solid black;
+    // width:clamp(94.8px, 30%, 182px);
+    width: 26vw;
+    position: absolute;
+    top: -1em;
+    right: -1em; //20px
+
+    img {
+        max-width: 100%;
+        display: block;
     }
-    
+
+
 }
 
 

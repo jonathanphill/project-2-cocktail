@@ -1,33 +1,78 @@
+@media (min-width : 321px) {
+    .section__one { 
+            h2 {
+                font-size: 42px;
+            }
+        }
+    
+}
+
+
+
 @media(min-width:600px) {
 
-    h1 {
-            font-size:6em;
-        }
     .nav__content__text {
-        // border: 2px solid tomato;
         padding-top:5em;
-            .nav__content__textImage {
-                // border: 1px solid tomato;
-                position: absolute;
-                top: 3em;
-                left:20em;
-                transform: rotate(10deg);
-            }
-    
         }
+}
+@media(min-width:400px) {
+
+    .nav__hero__img{
+        margin-bottom: 3em;
+    }
+
+    .main__heading {
+        position: relative;
+        position: absolute;
+
+    }
+
+    .nav__content__textImage {
+        // border: 2px solid black;
+        width: clamp(94.8px, 21vw, 143px);
+        // width: 21vw;
+        position: absolute;
+        top: -1.8em;
+        right: -2em;
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+
+    }
+}
+
+@media(min-width:700px) {
+
+    .main__heading {
+        // border: 2px solid tomato;
+        position: relative;
+        position: absolute;
+
+    }
+
+    .nav__content__textImage {
+        // border: 2px solid black;
+        width: clamp(94.8px, 21vw, 143px);
+        // width: 21vw;
+        position: absolute;
+        top: -1.8em;
+        right: -2em;
+
+        img {
+            max-width: 100%;
+            display: block;
+        }
+
+
+    }
 }
 
 @media(min-width:900px) {
     .nav__content__text {
         padding-top: 5em;
-
-        .nav__content__textImage {
-            // border: 1px solid tomato;
-            position: absolute;
-            top: 3em;
-            left: 25em;
-            transform: rotate(15deg);
-        }
 
     }
     .section__one {
@@ -67,9 +112,6 @@
         }
      }
 
-    h1 {
-        font-size: 6em;
-    }
 
     .nav__content{
     display: flex;
@@ -77,15 +119,11 @@
     .nav__content__text {
         width: 75%;
         margin: 0;
-        .nav__content__textImage {
-            // border: 1px solid tomato;
-            position: absolute;
-            width: 135px;
-            top: 36%;
-            left: 66%;
-            transform: rotate(1deg);
-        }
 
+    }
+
+    .nav__hero__img {
+        margin-bottom:0;
     }
 
     .nav__hero__img{
@@ -259,4 +297,10 @@
     }
 
 
+}
+
+@media (min-width: 1280px) {
+    .section_img{
+        margin: 0 auto;
+    }
 }
