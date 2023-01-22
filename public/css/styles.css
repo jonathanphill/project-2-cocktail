@@ -574,6 +574,34 @@ footer p {
   padding-top: 1em;
 }
 
+.blog__primary,
+.blog__secondary,
+.blog__teritiary {
+  box-shadow: 0 0 1rem rgba(0, 0, 0, 0.1);
+}
+
+.read-more-btn {
+  color: rgb(53, 49, 49);
+  padding: 15px 40px;
+  background-color: rgb(149, 170, 197);
+  border: none;
+  outline: none;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.moreText {
+  display: none;
+}
+
+.text.show-more .moreText {
+  display: inline;
+}
+
+.text.show-more .dots {
+  display: none;
+}
+
 .aside__top__content,
 .aside__content__primaryText {
   display: flex;
