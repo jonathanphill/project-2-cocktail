@@ -529,6 +529,7 @@ header {
 
 .galleryContainer {
   padding: 2em 1em;
+  border: 2px solid tomato;
   display: flex;
   flex-direction: column;
   justify-content: center;
@@ -536,6 +537,7 @@ header {
 }
 
 .imageGallery {
+  border: 2px solid black;
   display: flex;
   flex-direction: column;
   flex-wrap: no-wrap;

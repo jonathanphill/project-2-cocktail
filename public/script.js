@@ -1,15 +1,4 @@
-// const readMoreBtn = document.querySelector('.read-more-btn');
-// console.log(readMoreBtn);
-// const text = document.querySelector('.text');
 
-// readMoreBtn.addEventListener('click', (e) =>{
-//     text.classList.toggle('show-more');
-//     if(readMoreBtn.innerText === 'Read More'){
-//         readMoreBtn.innerText= 'Read Less';
-//     }else{
-//         readMoreBtn.innerText= 'Read More';
-//     }
-// })
 
 let noOfChar = 150;
 let contents = document.querySelectorAll(".content");
@@ -37,3 +26,4 @@ function readMore(btn){
     btn.textContent == "Read More" ? btn.textContent ="Read Less": btn.textContent ="Read More";
 
 }
+
