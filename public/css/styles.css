@@ -529,21 +529,47 @@ header {
 
 .galleryContainer {
   padding: 2em 1em;
-  border: 2px solid tomato;
   display: flex;
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
 }
 
 .imageGallery {
-  border: 2px solid black;
   display: flex;
   flex-direction: column;
   flex-wrap: no-wrap;
   justify-content: center;
   align-items: center;
   gap: 1em;
+}
+
+.gallery__Item {
+  transition: transform 10000ms ease-in;
+}
+
+.sliderButton {
+  position: absolute;
+  top: 50%;
+  height: 200px;
+  transform: translateY(-50%);
+  background: transparent;
+  border: 0;
+  cursor: pointer;
+}
+
+.sliderButtonLeft {
+  left: -30px;
+}
+
+.sliderButtonRight {
+  right: -30px;
+}
+
+.sliderButton img {
+  width: 20px;
+  height: 20px;
 }
 
 footer {
@@ -981,6 +1007,11 @@ address .email__address {
 @media (min-width: 1280px) {
   .section_img {
     margin: 0 auto;
+  }
+}
+@media (max-width: 1199px) {
+  .isHidden {
+    display: none;
   }
 }
 @media (min-width: 1200px) {
