@@ -8,7 +8,7 @@
     text-align:center;
     width: 100%;
     margin-bottom:1em;    
-    border: none;
+    border: 2px solid white;
     padding: .65em 0;
     box-shadow: 0 0 1rem rgba(0, 0, 0, .1);
 
@@ -16,6 +16,10 @@
         color:black;
         opacity: 1;
     }
+    &:focus{
+        outline: 0;
+    }
+    
 }
 
 .form__comment textarea{ 
@@ -27,12 +31,28 @@
     box-shadow: 0 0 1rem rgba(0, 0, 0, .1);
     margin-bottom: 1em;
     &::placeholder {
-            color: black;
-            opacity: 1;
-        }
+        color: black;
+        opacity: 1;
+    }
+    &:focus{
+        outline: 0;
+    }
+
 }
 .form__button{
     .btn{
         width: 100%;
     }
+}
+.form__user__info.success input{
+    border-color: #09c372;
+}
+.form__user__info.error input{
+    border-color: #ff3860;
+}
+.form__user__info .error{
+    margin-top: 5px;
+    color: #ff3860;
+    font-size: 20px;
+    height: 22px;
 }
