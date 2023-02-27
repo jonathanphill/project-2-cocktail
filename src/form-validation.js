@@ -1,3 +1,5 @@
+// the code is from one of the YouTube Videos
+
 console.log('it works');
 const userName = document.querySelector('#name');
 const userEmail = document.querySelector('#email');
