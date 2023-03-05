@@ -1,222 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Oswald:wght@700&display=swap" rel="stylesheet">
-    <title>Project Harper</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-<header>
-    <!-- Navigation -->
-    <div class="mainNavigation wrapper">
-
-        <input type="checkbox" id="navToggle" class="navToggle">
-        <label for="navToggle" class="navToggle-label">
-            <span></span>
-        </label>
-        <nav>
-            <ul class="mainNav">
-                <li><a href="#">Home</a></li>
-                <li><a href="#">About</a></li>
-                <li><a href="#" class="mainText">Harper</a></li>
-                <li><a href="./blog.html">Blog</a></li>
-                <li><a href="./contact.html">Contact</a></li>
-            </ul>
-        </nav>
-
-        <div class="nav__content">
-            <div class="nav__hero__img">
-                <img src="./assets/home-image-1.jpg" alt="picture of a person with baloons around them">
+    <header class="wrapper">
+        <h1>The Cocktail Library</h1>
+        <p>Click below to select your preffered spirit & stir for the recipe!</p>
+        <label for="spirits"></label>
+        <select name="spirit-selection" id="spirits">
+            <option value="">Select Spirits</option>
+            <option value="vodka">Vodka</option>
+            <option value="gin">Gin</option>
+            <option value="tequila">Tequila</option>
+            <option value="rum">Rum</option>
+        </select>
+        <button>Stir!</button>
+    </header>
+    <main class="wrapper">
+        <ul class='gallery'>
+            <li><img src="./assets/9179i01503565212_480.jpg" alt=""></li>
+            <li><img src="./assets/mql55h1643820632_480.jpg" alt=""></li>
+            <li><img src="./assets/qvrrvu1472667494_480.jpg" alt=""></li>
+            <li><img src="./assets/qyxrqw1439906528_480.jpg" alt=""></li>
+            <li><img src="./assets/xwxyux1441254243_480.jpg" alt=""></li>
+            <li><img src="./assets/9koz3f1643821062_480.jpg" alt=""></li>
+        </ul>
+        <button>Restart</button>
+        <div>
+            <div class='cocktail-img'>
+                <img src="./assets/mql55h1643820632.jpg" alt="">
             </div>
-            <div class="nav__content__text">
-
-                <div class="main__heading">
-                    <h1 class="main__heading--title">
-                    HARPER
-                    </h1> 
-                    <div class="nav__content__textImage">
-                    <img src="./assets/circle-text.png" alt="circle-text">
-                    </div>
-                </div>
-
-                
-            </div>
+            <div class='recipe'></div>
         </div>
-    </div>
-
-
-
-</header>
-<!-- *************************************************************************************** -->
-<main>
-    <!-- Section with Who's Harper Text STARTS!!-->
-    <section class="section__one">
-        <div class="wrapper">
-            <div class="section__text">
-                <h2>Who's Harper ?</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Error at vero dolore rem repellat explicabo
-                    illo delectus sint voluptatem ad dicta porro cum optio aliquid dolorem, tenetur corrupti, in quod.
-                </p>
-                <button class="btn">Find Out More</button>
-            </div>
-        </div>
-    </section>
-    <!-- Section with Who's Harper Text ENDS!!-->
-    <!-- ************************************************************************************* -->
-
-    <!-- Section with background Image of a pink building -->
-    <section class="oneImgSection">
-        <img class="section_img" src="./assets/home-image-2.jpg" alt="a building">
-    </section>
-    <!-- ************************************************************************************* -->
-
-    <!-- Section with Photos, About, Blog and Contact Me STARTS!! -->
-    <section class="iconSection">
-        <div class="primary_content wrapper">
-            <ul class="primary_content_list">
-                <li>
-                    <div class="primary_content_container">
-                        <a href="#">
-                            <h3 class="icon-before image-solid">Photos</h3>
-                        </a>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero necessitatibus consequatur
-                            error molestiae dolorem.</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="primary_content_container">
-                        <a href="#">
-                            <h3 class="icon-before user">About</h3>
-                        </a>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero necessitatibus consequatur
-                            error molestiae
-                            dolorem.</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="primary_content_container">
-                        <a href="./blog.html">
-                            <h3 class="icon-before display">Blog</h3>
-                        </a>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero necessitatibus consequatur
-                            error molestiae
-                            dolorem.</p>
-                    </div>
-                </li>
-                <li>
-                    <div class="primary_content_container">
-                        <a href="#">
-                            <h3 class="icon-before phone-flip">Contact Me</h3>
-                        </a>
-                        <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Vero necessitatibus consequatur
-                            error molestiae
-                            dolorem.</p>
-                    </div>
-                </li>
-            </ul>
-        </div>
-    </section>
-    <!-- Section with Photos, About, Blog and Contact Me ENDS!! -->
-    <!-- ************************************************************************************* -->
-
-    <!-- Section with image and text quarter STARTS!! -->
-
-    <section class="boxFlex wrapper2">
-        <div class="box box1">
-            <div class="box1__img">
-                <img src="./assets/home-image-3.jpg"
-                    alt="picture of setting sun in the background, with waves in the foreground">
-            </div>
-
-        </div>
-        <div class="box box2">
-
-            <div class="box2Flex">
-                <h2>Harper's Travels</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea architecto totam id officia voluptate,
-                    autem vel
-                    voluptates odio dolores. Ab, a! Officiis labore quis deleniti consequuntur fugiat laboriosam. Esse,
-                    quasi?</p>
-                <button class="btn">Read More</button>
-            </div>
-        </div>
-    </section>
-    <section class="sectionFlex wrapper2">
-        <div class="sectionFlex_content box">
-            <div class="sectionFlex_text">
-                <h2>Favourite Things</h2>
-                <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Ea architecto totam id officia voluptate,
-                    autem vel
-                    voluptates odio dolores. Ab, a! Officiis labore quis deleniti consequuntur fugiat laboriosam. Esse,
-                    quasi?
-                </p>
-                <button class="btn">Read More</button>
-            </div>
-        </div>
-
-        <div class="sectionFlexImg box">
-            <div>
-                <img src="./assets/home-image-4.jpg" alt="a factory">
-            </div>
-
-        </div>
-    </section>
-
-
-    <!-- Section with image and text quarter ENDS!! -->
-    <!-- ************************************************************************************* -->
-
-    <!-- Harper Journey section with image and text STARTS!!-->
-    <section class="wrapper" >
-        <div  class="sectionFive" >
-            <div class="oneImgContainer">
-                <img src="./assets/home-image-5.jpg" alt="picture of a person smiling">
-            </div>
-            <div class="journeyTxtContainer">
-                <h2>Harper's Journey</h2>
-                <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Eum nihil sed, deleniti officia quae ad in
-                    fugiat ipsum dicta sunt delectus non vel soluta, mollitia tempora facilis. Sunt, ipsum fugit? Lorem
-                    ipsum dolor sit amet consectetur adipisicing elit. Molestiae, alias.</p>
-                <button class="btn">Find Out More</button>
-            </div>
-            
-        </div>
-    </section>
-    <!-- Harper Journey section with image and text ENDS!!-->
-    <!-- ************************************************************************************* -->
-
-    <!-- Section with Gallery Image -->
-    <section class="galleryContainer__section">
-        <div class="galleryContainer wrapper">
-            <button class="sliderButton sliderButtonLeft isHidden">
-                <img src="./assets/chevron-left-solid.svg" alt="">
-            </button>
-            <div class="sliderContainer">
-                <ul class="imageGallery">
-                    <!-- <li class="gallery__item"><img src="./assets/home-image-6.jpg" alt="corner view of a pink building"></li>
-                    <li class="gallery__item"><img src="./assets/home-image-7.jpg" alt="an airplane in the sky"></li>
-                    <li class="gallery__item"><img src="./assets/home-image-8.jpg" alt="pink and blue clouds"></li> -->
-                </ul>
-            </div>
-            <button class="sliderButton sliderButtonRight isHidden">
-                <img src="./assets/chevron-right-solid.svg" alt="">
-            </button>
-        </div>
-    </section>
-</main>
-<img src="" alt="">
-
-<footer>
-    <p>Copyright &#169 2022 HackerYou</p>
-</footer>
-<script src="./slider.js"></script>
+    </main>
 </body>
+
 </html>

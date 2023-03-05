@@ -1,20 +1,49 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="./css/styles.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Cabin&family=Oswald:wght@700&display=swap" rel="stylesheet">
-    <title>Project Harper</title>
-    <link rel="stylesheet" href="css/styles.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"
-        integrity="sha512-MV7K8+y+gLIBoVD59lQIYicR65iaqukzvf/nwasF0nqhPay5w/9lJmVM2hMDcnK1OnMGCdVK+iQrJ7lzPJQd1w=="
-        crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&family=Roboto:wght@400;700&display=swap"
+        rel="stylesheet">
 </head>
-<body>
 
-<script src="./slider.js"></script>
+<body>
+    <header class="wrapper">
+        <h1>The Cocktail Library</h1>
+        <p>Click below to select your preffered spirit & stir for the recipe!</p>
+        <label for="spirits"></label>
+        <select name="spirit-selection" id="spirits">
+            <option value="">Select Spirits</option>
+            <option value="vodka">Vodka</option>
+            <option value="gin">Gin</option>
+            <option value="tequila">Tequila</option>
+            <option value="rum">Rum</option>
+        </select>
+        <button>Stir!</button>
+    </header>
+    <main class="wrapper">
+        <ul class='gallery'>
+            <li><img src="./assets/9179i01503565212_480.jpg" alt=""></li>
+            <li><img src="./assets/mql55h1643820632_480.jpg" alt=""></li>
+            <li><img src="./assets/qvrrvu1472667494_480.jpg" alt=""></li>
+            <li><img src="./assets/qyxrqw1439906528_480.jpg" alt=""></li>
+            <li><img src="./assets/xwxyux1441254243_480.jpg" alt=""></li>
+            <li><img src="./assets/9koz3f1643821062_480.jpg" alt=""></li>
+        </ul>
+        <button>Restart</button>
+        <div>
+            <div class='cocktail-img'>
+                <img src="./assets/mql55h1643820632.jpg" alt="">
+            </div>
+            <div class='recipe'></div>
+        </div>
+    </main>
 </body>
+
 </html>
