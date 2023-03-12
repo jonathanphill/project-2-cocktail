@@ -11,3 +11,20 @@
 
     flex-wrap: wrap;
 }
+.recipe{
+    display: flex;
+    p{
+        margin-right: 1em;
+    }
+}
+
+.cocktail-img{
+    margin: 0 auto;
+    width:40%;
+    height: auto;
+    object-fit: cover;
+}
+.cocktailContent{
+    background-color: #c0c4c4;
+    
+}

@@ -267,6 +267,24 @@ h1 {
   width: calc(50% - 3px);
 }
 
+.recipe {
+  display: flex;
+}
+.recipe p {
+  margin-right: 1em;
+}
+
+.cocktail-img {
+  margin: 0 auto;
+  width: 40%;
+  height: auto;
+  object-fit: cover;
+}
+
+.cocktailContent {
+  background-color: #c0c4c4;
+}
+
 @media (max-width: 759px) {
   header {
     background-image: url("../assets/pexels-karolina-grabowska-4021976.jpg");

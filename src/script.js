@@ -35,6 +35,8 @@ app.init = () => {
 
     app.cocktailImg = document.querySelector('.cocktail-img');
     app.cocktailRecipe = document.querySelector('.recipe');
+    app.recipeInstructions = document.querySelector('.selectedCocktail');
+    app.cocktailImg = document.querySelector('.cocktail-img');
 
 }
 
@@ -50,7 +52,6 @@ app.getCocktails = () => {
             return response.json()
         })
         .then(drinksResult => {
-            console.log(drinksResult);
             app.displayImages(drinksResult);
         })
 }
@@ -83,57 +84,73 @@ app.displayImages = (drinksArray) => {
     app.ulElement.childNodes.forEach(liElement => {
         liElement.addEventListener('click', () => {
             let idDrink = liElement.getAttribute('id');
+            app.recipeInstructions.innerHTML = '';
+            app.cocktailImg.innerHTML='';
             app.getRecipe(idDrink);
         });
+
     })
 
 }
 
 // declaring app.getRecipe method to fetch the cocktail recipe for the user
 app.getRecipe = (idDrink) => {
+   
     const url = new URL(app.apiRecipeUrl);
+    let ingredients;
+    let measures;
+    let instructions;
+    const selectedCocktailImg = document.createElement('img');
+  
     url.search = new URLSearchParams({
         'i': idDrink
     });
+    // strIngredient- ingredient
+    // strInstructions - steps
+    // strMeasure - quantities
     fetch(url)
         .then(response => {
             return response.json()
         })
         .then(idResult => {
-            console.log(idResult);
             console.log(idResult.drinks[0]);
-            for (let i = 0; i < idResult.drinks.length; i++) {
-                const image = document.createElement('img');
-                const text = document.createElement('p');
-
-                image.src = idResult.drinks[0].strDrinkThumb;
-                for (let key in idResult.drinks[0]) {
-
-                    if ((key.includes('strIngredient')) || (key.includes('strMeasure'))) {
-                        if (idResult.drinks[0][key] !== null || idResult.drinks[0][key] !== "") {
-                            console.log(`key: ${idResult.drinks[0][key]}`);
-
-                            text.innerText += idResult.drinks[0][key] + '\r\n';
-
-
-
-
-                        }
-                    }
+            selectedCocktailImg.src = idResult.drinks[0].strDrinkThumb;
+            app.cocktailImg.appendChild(selectedCocktailImg);
+            ingredients =app.checkProperty(idResult.drinks[0], 'strIngredient');
+            measures=app.checkProperty(idResult.drinks[0], 'strMeasure');
+            instructions=app.checkProperty(idResult.drinks[0], 'strInstructions');
+            for (let i = 0; i < ingredients.length; i++) {
+                if(measures[i]==undefined){
+                    measures[i]=''
                 }
-                app.cocktailRecipe.appendChild(text);
-                app.cocktailImg.appendChild(image);
-
-
-
+                app.recipeInstructions.insertAdjacentHTML('beforeend', 
+                    `<div class='recipe'>
+                    <p>${ingredients[i]}</p>
+                    <p>${measures[i]}</p> 
+                    </div>`)
+                
             }
+            app.recipeInstructions.insertAdjacentHTML('beforeend',
+                `<div class='method'>
+                    <p>${instructions[0]}</p>
+                </div>`)
+            
+        }) 
+    
+        
+        
 
-
-        })
-    // strIngredient- ingredient
-    // strInstructions - steps
-    // strMeasure - quantities
-
+}
+// to check if  a particular property exits in a given object
+app.checkProperty = (obj, objProperty) =>{
+    const eleArray  = [];
+    for(let key in obj){
+        if(key.includes(objProperty) && (obj[key] !== null && obj[key] !=="")){
+            eleArray.push(obj[key]);
+            
+        }
+    }
+    return eleArray;
 }
 
 
