@@ -255,6 +255,18 @@ h1 {
   margin: 0;
 }
 
+.gallery {
+  margin-top: 1em;
+  display: flex;
+  justify-content: center;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+.gallery li {
+  border: 1px solid black;
+  width: calc(50% - 3px);
+}
+
 @media (max-width: 759px) {
   header {
     background-image: url("../assets/pexels-karolina-grabowska-4021976.jpg");
